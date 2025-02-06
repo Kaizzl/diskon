@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penghitung Diskon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Penghitung Diskon</h2>
+        <form>
+            <label for="harga">Harga Awal (Rp):</label>
+            <input type="number" id="harga" name="harga" value="" min="0" oninput="hasil.value=harga.value-(harga.value*diskon.value/100)">
+
+            <label for="diskon">Persentase Diskon (%):</label>
+            <input type="number" id="diskon" name="diskon" value="" min="0" max="100" oninput="hasil.value=harga.value-(harga.value*diskon.value/100)">
+
+            <p class="result">Harga Setelah Diskon: Rp <output name="hasil">0</output></p>
+        </form>
+    </div>
+</body>
+</html>
